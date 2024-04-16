@@ -1,0 +1,15 @@
+# ¿Puede ver el archivo tp2_1_2.c? ¿Por qué?
+
+Cuando se accede al archivo que se trabajó desde la branch  option_2 a través de la branch principal, no se puede verlo. Los cambios realizados en ambas sesiones de trabajo están aislados en ramas independientes: puedes saltar libremente de una a otra según estimes oportuno.
+
+#Vuelva a ejecutar el comando gitk --all ¿Qué diferencias nota? 
+
+
+Cuando trabajo en option_2 y ejecutas gitk --all, se ve a esta rama secundaria divergiendo de la rama principal (main). Cada commit en la rama secundaria se mostrará en una línea separada paralela a la rama principal.
+
+Al realizar nuevos cambios tanto en la rama option_2 como en la main, y luego ejecutar gitk --all, vemos que ambas ramas avanzan independientemente. Cada commit que se haga en cada rama se mostrará en la línea correspondiente.
+
+
+#Luego utilice el comando gitk –all para ver los cambios, ¿Qué nota?
+
+Luego de realizar el merge, vemos como ambas ramas se fusionan exitosamente en la rama main. Ahora todos los commits de option_2 estarán en main.
